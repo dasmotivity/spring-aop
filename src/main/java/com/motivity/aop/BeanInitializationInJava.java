@@ -10,10 +10,10 @@ public class BeanInitializationInJava {
     public BusinessLogic getBussinessLogic(){
         return new BusinessLogic();
     }
-//    @Bean
-//    public AnnotationAwareAspectJAutoProxyCreator getAnnotationAwareAspectJAutoProxyCreator(){
-//        return new AnnotationAwareAspectJAutoProxyCreator();
-//    }
+   @Bean
+   public AnnotationAwareAspectJAutoProxyCreator getAnnotationAwareAspectJAutoProxyCreator(){
+       return new AnnotationAwareAspectJAutoProxyCreator();
+   }
     @Bean
     public BussinessLogicTracking  getBussinessLogicTracking(){
         return new BussinessLogicTracking();
